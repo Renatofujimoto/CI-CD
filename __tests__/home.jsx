@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Home from "../app/page";
+import "@testing-library/jest-dom";
 
 describe("Home component", () => {
   test("renders the main section", () => {
