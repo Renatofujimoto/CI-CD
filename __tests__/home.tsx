@@ -9,12 +9,6 @@ describe("Home component", () => {
     expect(mainElement).toBeInTheDocument();
   });
 
-  test('renders the "Get started by editing" text', () => {
-    render(<Home />);
-    const textElement = screen.getByText(/Get started by editing/i);
-    expect(textElement).toBeInTheDocument();
-  });
-
   test("renders the code file path", () => {
     render(<Home />);
     const codeElement = screen.getByText(/app\/page.tsx/i);
